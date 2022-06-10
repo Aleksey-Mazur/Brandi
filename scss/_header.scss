@@ -1,0 +1,71 @@
+.header-wrapper {
+  width: 100%;
+  background-color: rgba($color: #101636, $alpha: 0.2);
+  position: relative;
+  z-index: 10;
+  .navbar {
+    padding: 0;
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      .navbar-brand {
+        font: 400 28px "Pacifico", cursive;
+        color: #fff;
+        margin-right: 40px;
+      }
+      span {
+        font-weight: 300;
+        font-size: 13px;
+        margin-top: 8px;
+        color: rgba($color: #fff, $alpha: 0.3);
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 2px;
+          height: 18px;
+          background: rgba($color: #17526e, $alpha: 0.3);
+          top: 1px;
+          left: -21px;
+        }
+      }
+    }
+    .navbar-collapse {
+      justify-content: flex-end;
+      @media (max-width: 991.98px) {
+        background: #0e2c2a;
+      }
+      .nav-item {
+        margin-left: 30px;
+        @media (max-width: 991.98px) {
+          margin-left: 0;
+        }
+        .nav-link {
+          padding: 25px 0;
+          color: #fff;
+          font-size: 13px;
+          border-top: 2px solid transparent;
+          @media (max-width: 991.98px) {
+            border-top: none;
+            border-bottom: 2px solid transparent;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px 0;
+          }
+          &.active,
+          &:hover {
+            border-top: 2px solid #17526e;
+            @media (max-width: 991.98px) {
+              border-top: none;
+              border-bottom: 2px solid #17526e;
+            }
+          }
+        }
+      }
+    }
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

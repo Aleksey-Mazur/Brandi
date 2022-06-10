@@ -1,0 +1,85 @@
+.carousel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .carousel-indicators {
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    margin: 0;
+    right: 3%;
+    button {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid #fff;
+      margin-bottom: 15px;
+      &.active {
+        background: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+.carousel-caption {
+  bottom: 21%;
+  z-index: 3;
+  @media (max-width: 1199.98px) {
+    bottom: 6%;
+    h1,
+    .tagline {
+      margin: 0;
+    }
+  }
+  h1 {
+    font-size: 62px;
+    font-weight: 300;
+    @media (max-width: 991.98px) {
+      font-size: 42px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 32px;
+    }
+  }
+  .tagline {
+    display: block;
+    font-weight: 300;
+    font-size: 48px;
+    margin-bottom: 18px;
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+    strong {
+      color: rgba($color: $main-green, $alpha: 0.9);
+    }
+  }
+  .tagline-caption {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    @media (max-width: 991.98px) {
+      font-size: 14px;
+    }
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+    &::before,
+    &:after {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: $main-green;
+      top: 13px;
+    }
+    &::before {
+      left: -62px;
+    }
+    &:after {
+      right: -62px;
+    }
+  }
+}

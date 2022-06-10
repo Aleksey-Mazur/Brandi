@@ -1,1 +1,9 @@
-
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+  xxl: 1320px,
+) !default;
+$font-family-base: "Open Sans", sans-serif;
+$body-color: #062033;
