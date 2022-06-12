@@ -1,0 +1,66 @@
+@mixin headerH2 {
+  color: $main-green;
+  text-transform: uppercase;
+  height: 60px;
+  font-weight: 800;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    width: 90px;
+    height: 1px;
+    background: #dce1e5;
+    position: absolute;
+    top: 52px;
+  }
+  &:before {
+    right: calc(50% + 14px);
+  }
+  &::after {
+    left: calc(50% + 14px);
+  }
+  .icon-heart {
+    display: block;
+    color: #c3c6c7;
+    font-size: 14px;
+  }
+}
+
+@mixin indicators {
+  .indicators-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      list-style-type: none;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 6%;
+      @media (max-width: 991.98px) {
+        width: 12%;
+      }
+      @media (max-width: 575.98px) {
+        width: 20%;
+      }
+      a {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #c3c6c7;
+        border-radius: 50%;
+      }
+      .active,
+      a:hover {
+        background: #062033;
+      }
+    }
+  }
+}

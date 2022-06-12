@@ -1,0 +1,46 @@
+.features-wrapper {
+  background: #f4f7f9;
+  .features {
+    padding-top: 50px;
+    .features-list-wrapper {
+      padding-bottom: 62px;
+      h2 {
+        @include headerH2;
+      }
+      .features-list {
+        padding-left: 58px;
+        margin-top: 52px;
+        @media (max-width: 575.98px) {
+          padding-left: 70px;
+        }
+        h3 {
+          font-weight: 600;
+          font-size: 20px;
+          font-family: "Open Sans", sans-serif !important;
+          position: relative;
+          margin-bottom: 16px;
+          &::before {
+            position: absolute;
+            top: 0;
+            left: -56px;
+            font-family: "icomoon";
+            color: $main-green;
+            border: 1px solid $main-green;
+            border-radius: 50%;
+            padding: 9px;
+          }
+        }
+        .icon-branding-icon::before {
+          padding: 9px 12px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    @include indicators;
+    .indicators-main {
+      height: 62px;
+    }
+  }
+}

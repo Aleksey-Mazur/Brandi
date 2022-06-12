@@ -1,7 +1,6 @@
 .carousel {
-  position: absolute;
-  top: 0;
   width: 100%;
+  margin-top: -70px;
   .carousel-indicators {
     flex-direction: column;
     align-items: flex-end;
@@ -80,6 +79,32 @@
     }
     &:after {
       right: -62px;
+    }
+  }
+}
+
+.social-links {
+  margin: -76px auto 52px;
+  @media (max-width: 1199.98px) {
+    margin: -30px auto 6px;
+  }
+  ul {
+    z-index: 5;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    li {
+      a {
+        text-decoration: none;
+        color: rgba($color: #fff, $alpha: 0.3);
+        font-size: 18px;
+        @media (max-width: 767.98px) {
+          color: #fff;
+        }
+        &:hover {
+          color: #fff;
+        }
+      }
     }
   }
 }
