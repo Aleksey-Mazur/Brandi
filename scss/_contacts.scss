@@ -1,12 +1,173 @@
 .contacts-wrapper {
   h2 {
     @include headerH2;
-    margin-bottom: 24px;
+    margin: 90px 0 24px;
   }
   p {
     text-align: center;
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 72px;
+  }
+  .feedback-main {
+    padding-bottom: 70px;
+  }
+}
+
+.contacts {
+  @media (max-width: 767.98px) {
+    text-align: center;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  address,
+  address > ul > li > a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #6a737b;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          color: $main-green;
+        }
+      }
+    }
+  }
+}
+
+.feedback-form {
+  margin-bottom: 20px;
+  h3 {
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
+    .form-floating {
+      width: 48%;
+      @media (max-width: 991.98px) {
+        width: 100%;
+      }
+    }
+  }
+  label {
+    color: #5b646e;
+    font-size: 13px;
+    padding-left: 0;
+  }
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  font-size: 13px;
+  color: #5b646e;
+  padding-left: 0;
+  &:focus {
+    border-color: $main-green;
+    box-shadow: none;
+  }
+}
+
+.send-btn {
+  float: right;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+  color: #000;
+  box-shadow: none;
+  &::before {
+    content: "\e945";
+    font-family: "icomoon";
+    color: $main-green;
+    font-size: 16px;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #000;
+  }
+}
+
+.icon-social {
+  list-style-type: none;
+  padding: 0 25%;
+  margin: 0;
+  @media (max-width: 991.98px) {
+    margin-top: 70px;
+  }
+  li {
+    margin: 20px 4px;
+    a {
+      color: #cdd2d6;
+      text-decoration: none;
+      font-size: 24px;
+    }
+  }
+}
+
+.icon-behance:hover {
+  color: #053eff;
+}
+.icon-twitter:hover {
+  color: #00acee;
+}
+.icon-dribbble:hover {
+  color: #ea4c89;
+}
+.icon-telegram:hover {
+  color: #0088cc;
+}
+.icon-youtube-icon-logo:hover {
+  color: #ff0000;
+}
+
+.map {
+  border-bottom: 5px solid #062033;
+  img {
+    width: 100%;
+  }
+  .map-min-01,
+  .map-min-02 {
+    display: none;
+  }
+  @media (max-width: 1199.98px) {
+    .main-map {
+      display: none;
+    }
+    .map-min-01 {
+      display: block;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .map-min-01 {
+      display: none;
+    }
+    .map-min-02 {
+      display: block;
+    }
   }
 }

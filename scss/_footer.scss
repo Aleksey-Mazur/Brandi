@@ -1,0 +1,133 @@
+.footer-wrapper {
+  background: #1ea78d;
+  padding: 90px 0;
+  color: #fff;
+  font-size: 13px;
+  line-height: 24px;
+  @media (max-width: 1199.98px) {
+    line-height: 18px;
+  }
+  h5 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 40px;
+    @media (max-width: 1199.98px) {
+      margin-bottom: 18px;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    p {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+.logo {
+  font: 400 28px "Pacifico", cursive;
+}
+.description {
+  padding-right: 32px;
+}
+
+.explore-links {
+  padding-left: 32px;
+  .read-more {
+    display: flex;
+    justify-content: flex-start;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: -8px 32px 16px 0;
+      li {
+        padding: 0 4px 10px 0;
+        a {
+          text-decoration: none;
+          color: #fff;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+// ======Subscribe form======
+.subscribe-form {
+  width: 100%;
+  margin-bottom: 18px;
+  &:focus {
+    outline: none;
+  }
+  .form-control {
+    border: none;
+    color: #5b646e;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  input {
+    height: 44px;
+  }
+  button {
+    border: none;
+    height: 44px;
+    background-color: #0ed085;
+    color: #fff;
+    margin: -1px;
+    border-radius: 0;
+    text-transform: uppercase;
+    position: relative;
+    transition: all ease 0.3s;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      color: #fff;
+      background-color: rgba(14, 208, 133, 0.77);
+      outline: none;
+      transition: all ease 0.3s;
+      &:before {
+        background-color: rgba(14, 208, 133, 0.77);
+        transition: all ease 0.3s;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 1px;
+      background-color: #0ed085;
+      width: 100%;
+      transition: all ease 0.3s;
+    }
+  }
+  .input-group-btn:last-child > .btn,
+  .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: 0px;
+  }
+}
+// ======Subscribe form======
+
+.creators-info {
+  height: 194px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  p {
+    border-left: 1px solid rgba($color: $body-color, $alpha: 0.3);
+    padding-left: 12px;
+  }
+  .icon-heart {
+    color: rgba($color: #000, $alpha: 0.3);
+    margin: 0 4px;
+  }
+  i,
+  .copyright {
+    color: $body-color;
+    font-style: normal;
+  }
+}
