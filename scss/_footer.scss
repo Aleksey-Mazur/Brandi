@@ -37,22 +37,6 @@
   }
 }
 
-.read-more ul {
-  list-style-type: none;
-  padding: 0;
-  margin: -8px 32px 16px 0;
-  li {
-    padding: 0 4px 10px 0;
-    a {
-      text-decoration: none;
-      color: #fff;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
 // ======Subscribe form======
 .subscribe-form {
   width: 100%;
@@ -111,6 +95,22 @@
   }
 }
 // ======Subscribe form======
+
+.read-more ul {
+  list-style-type: none;
+  padding: 0;
+  margin: -8px 32px 16px 0;
+  li {
+    padding: 0 4px 10px 0;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
 .creators-info {
   height: 194px;
