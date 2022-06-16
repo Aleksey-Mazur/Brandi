@@ -32,13 +32,11 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    li {
-      a {
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-          color: $main-green;
-        }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $main-green;
       }
     }
   }
